@@ -1,6 +1,6 @@
 {
-  "name": "ng4matfire",
-  "version": "1.0.3",
+  "name": "ngxmatfire",
+  "version": "1.0.4",
   "author": "Procoder17",
   "description": "Full stack starter app with Angular 4, Material Design and Firebase.",
   "keywords": [
@@ -12,7 +12,7 @@
     "starter-template",
     "ngx"
   ],
-  "homepage": "https://github.com/jameschan888/Angular4MaterialDesign",
+  "repository": "https://github.com/jameschan888/Angular-ui-firebase",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
