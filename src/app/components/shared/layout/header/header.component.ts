@@ -13,6 +13,24 @@ export class HeaderComponent {
   isAuthenticated = false;
   angularImage: string;
 
+  menuItems: Array<Object> = [
+    {
+      icon: 'description',
+      title: 'Medium @jameschan888',
+      link: 'https://medium.com/@jameschan888'
+    },
+    {
+      icon: 'archive',
+      title: 'Published packages',
+      link: 'https://www.npmjs.com/~jameschan888'
+    },
+    {
+      icon: 'link',
+      title: 'Fork on Github',
+      link: 'https://github.com/jameschan888/Angular-ui-firebase'
+    },
+  ];
+
   constructor(
     public authService: AuthService,
     private alertService: AlertService,
@@ -41,17 +59,4 @@ export class HeaderComponent {
     this.authService.logout();
     this.alertService.showToaster('Logout succesful');
   }
-
-  public menuItems: Array<Object> = [
-    {
-      icon: 'description',
-      title: 'Published packages',
-      link: 'https://www.npmjs.com/~jameschan888'
-    },
-    {
-      icon: 'link',
-      title: 'Fork on Github',
-      link: 'https://github.com/jameschan888/Angular-ui-firebase'
-    },
-  ];
 }
